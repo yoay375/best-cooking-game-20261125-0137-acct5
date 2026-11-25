@@ -1,16 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Smokehouse BBQ — a low-and-slow cooking game</title>
-<link rel="icon" href="data:,">
-<link rel="stylesheet" href="./style.css">
+<title>Ember &amp; Thyme — Hearthside Kitchen</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- One canvas holds the whole smokehouse; the status line is only read aloud. -->
-<canvas id="game" aria-label="Smokehouse BBQ: smoke meat low and slow, build plates to order and serve them before the dinner crowd walks off"></canvas>
-<p id="status" role="status" aria-live="polite"></p>
-<script type="module" src="./src/boot.js"></script>
+<main id="stage">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="help">
+    <strong>Ember &amp; Thyme</strong> — click a bin to grab an ingredient, chop it on the
+    board, grill it on the hearth, stack it on the plate, and serve it at the window
+    before the guest's patience runs out.
+    Keys: <b>1–6</b> grab ingredient · <b>Space</b> chop / work · <b>S</b> serve ·
+    <b>T</b> trash · <b>P</b> pause · <b>M</b> mute · <b>Enter</b> start.
+  </div>
+  <div id="fallback" hidden>
+    Your browser could not start the game. Try a recent desktop Chrome or Firefox
+    with JavaScript enabled.
+  </div>
+</main>
+<script type="module" src="src/main.js"></script>
 </body>
 </html>
