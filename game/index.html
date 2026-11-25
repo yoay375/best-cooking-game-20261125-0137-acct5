@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Taco Truck Fiesta — a festival cooking game</title>
+<title>Smokehouse BBQ — a low-and-slow cooking game</title>
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<canvas id="game" aria-label="Taco Truck Fiesta: grill meat, build tacos to order and serve them before the festival crowd walks off"></canvas>
+<!-- One canvas holds the whole smokehouse; the status line is only read aloud. -->
+<canvas id="game" aria-label="Smokehouse BBQ: smoke meat low and slow, build plates to order and serve them before the dinner crowd walks off"></canvas>
 <p id="status" role="status" aria-live="polite"></p>
-<script type="module" src="./src/main.js"></script>
+<script type="module" src="./src/boot.js"></script>
 </body>
 </html>

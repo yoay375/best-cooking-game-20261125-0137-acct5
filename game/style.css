@@ -1,10 +1,11 @@
-/* Taco Truck Fiesta — the page chrome around the canvas. The game itself is drawn
-   on the canvas; this only makes the canvas fill the window. */
-html, body {
+/* Smokehouse BBQ — the page chrome around the canvas. The game paints itself on the
+   canvas; this stylesheet only makes the canvas fill the window. */
+html,
+body {
   margin: 0;
   height: 100%;
   overflow: hidden;
-  background: #241a2e;
+  background: #1c1226;
 }
 
 #game {
